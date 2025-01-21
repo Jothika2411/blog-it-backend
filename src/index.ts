@@ -35,7 +35,13 @@ const startServer = async () => {
   );
 
   httpServer.listen({ port: 4000 }, () => {
-    console.log(`Server ready at http://localhost:4000/graphql`);
+    const address = httpServer.address();
+    if (address && typeof address === 'object') {
+      const { address: host } = address;
+      console.log(`Server ready at https://${host}/graphql`);
+    } else {
+      console.log('Server ready at http://localhost:4000/graphql');
+    }
   });
 };
 
