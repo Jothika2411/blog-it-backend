@@ -4,9 +4,19 @@ A simple backend for the blog app with GraphQL API.
 
 ## Setup Steps
 
-1. First clone this repo
+1. Clone this repository
 2. Go to project folder
+
+```
+cd blog-it-backend
+```
+
 3. Install all packages
+
+```
+npm install
+```
+
 4. Create a .env file and add these
 
 ```
@@ -32,15 +42,6 @@ http://localhost:4000/graphql
 ```
 npm run seed
 ```
-
-## Features
-
-- GraphQL API
-- JWT Authentication
-- MongoDB Database
-- Password Hashing
-- Input Validations
-- Error Handling
 
 ## API Features
 
